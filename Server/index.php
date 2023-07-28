@@ -19,6 +19,8 @@ $requestUri = ltrim($requestUri, '/');
 
 $urlParts = explode('/', $requestUri);
 
+$urlParts = array_reverse($urlParts);
+
 if ($method === 'POST') {
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $jsonData = file_get_contents('php://input');
@@ -39,12 +41,12 @@ if ($method === 'POST') {
             echo json_encode(['error' => 'Dados de beneficiários ou planId não fornecidos corretamente.']);
         }
     } 
-} elseif ($method === 'GET' && isset($urlParts[2]) && $urlParts[2] === 'propostas') {
+} elseif ($method === 'GET' && isset($urlParts[0]) && $urlParts[0] === 'propostas') {
    
     require_once __DIR__.'/Views/PropostasView.php';
     echo retornaPropostas();
 
-} elseif ($method === 'GET' && isset($urlParts[2]) && $urlParts[2] === 'planos'){
+} elseif ($method === 'GET' && isset($urlParts[0]) && $urlParts[0] === 'planos'){
     require_once __DIR__.'/Views/PlansView.php';
     echo retornaPlanos();
 
