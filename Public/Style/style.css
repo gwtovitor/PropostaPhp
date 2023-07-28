@@ -62,7 +62,7 @@ header {
   cursor: pointer;
   font-weight: 900;
   transition: 0.3s;
-  color: #000;
+  color: #000;  
 }
 
 #users-form h2 {
@@ -197,13 +197,13 @@ header {
 #wrapper-section {
   display: flex;
   flex-direction: column;
-  gap: 10rem;
 }
 
 
 #wrapper-section-div {
   display: flex;
-  justify-content: center
+  justify-content: center;
+  align-items: center;
 }
 
 #wrapper-section-div p {

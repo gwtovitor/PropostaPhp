@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +7,6 @@
     <link rel="stylesheet" href="../Style/style.css">
     <link rel="shortcut icon" href="../Assets/logo.png" type="image/x-icon">
 </head>
-
 <body>
     <header>
         <a href="http://localhost:8001/">
@@ -19,6 +17,7 @@
         </div>
     </header>
     <div>
+        <h3 id="no-proposta-message" style="display: none;">Você deve realizar primeiro uma proposta.</h3>
         <table id="dadosTabela">
             <thead>
                 <tr>
@@ -28,14 +27,10 @@
                 </tr>
             </thead>
             <tbody>
-
             </tbody>
         </table>
 
-
-
-
         <script src="../Scripts/scriptsPropostas.js"></script>
+    </div>
 </body>
-
 </html>
