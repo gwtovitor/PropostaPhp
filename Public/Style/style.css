@@ -22,6 +22,7 @@ a {
   height: 5rem;
   background-color: #fff;
   align-items: center;
+  padding: 2%;
 }
 
 header {
@@ -46,10 +47,14 @@ header {
   width: 90vw;
 }
 
+.divTitle h1 {
+  text-align: center;
+}
+
 .buttonConferir {
-  /* padding: 5rem; */
-  width: 15rem;
-  height: 4rem;
+  width: 100%;
+  padding: 10px;
+  height: 80%;
   border-radius: 10px;
   background-color: transparent;
   border: green 2px solid;
@@ -204,14 +209,20 @@ header {
 #wrapper-section-div p {
   margin-top: 5vh;
   font-weight: 500;
-  font-size: 1.2rem
+  font-size: 1.2rem;
+  margin: 5%;
+  text-align: center;
 }
 
 #btn-venhaconferir {
+  width: 80%;
+  align-self: center;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  
+  align-items: center;  
+}
+#btn-venhaconferir a{
+  margin: 0 5px;
 }
 
 #dadosTabela {
@@ -234,6 +245,18 @@ header {
 #dadosTabela tr {
   margin-bottom: 8px;
 }
-#response-proposta{
+
+#response-proposta {
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .user-field{
+    display: flex;
+    flex-direction: column;
+  }
+  
+#dadosTabela {
+  margin: 5% auto;
+
+}
 }

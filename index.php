@@ -11,9 +11,9 @@
 
 <body>
   <header class='header'>
-    <a href="http://localhost:8001/Public/Pages/index.php">
+  
       <img class="imgLogo" src="./Public/Assets/logo.png" alt="" />
-    </a>
+   
     <div class="divTitle">
       <h1 class="">Bitix Costumer</h1>
     </div>
