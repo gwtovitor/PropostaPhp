@@ -3,7 +3,6 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST");
 header("Access-Control-Allow-Headers: Content-Type");
 
-// Função para carregar automaticamente as classes necessárias
 spl_autoload_register(function ($className) {
     $filePath = './Controllers/' . $className . '.php';
     if (file_exists($filePath)) {

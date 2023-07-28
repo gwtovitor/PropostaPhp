@@ -25,10 +25,9 @@ class PropostaController
             return $proposta;
         }
     
-        // Obter o número de vidas para esse plano
         $numVidas = count($beneficiarios);
     
-        $planoNome = $plano['nome']; // Nome do plano escolhido
+        $planoNome = $plano['nome'];
         
         foreach ($beneficiarios as $beneficiario) {
             $idade = $beneficiario['idade'];

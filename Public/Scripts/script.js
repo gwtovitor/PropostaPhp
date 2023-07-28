@@ -11,7 +11,6 @@ async function displayPlansAndPrices() {
     exibePrecosePlanos();
   } catch (error) {
     console.error("Erro ao obter os dados do servidor:", error);
-    // Exibir uma mensagem de erro no front-end (opcional)
     const errorMessage = document.getElementById("error-message");
     errorMessage.textContent =
       "Ocorreu um erro ao obter os dados do servidor. Por favor, tente novamente mais tarde.";
@@ -58,7 +57,7 @@ function exibePrecosePlanos() {
     const key = planKeys[i];
     if (plansData.hasOwnProperty(key)) {
       const option = document.createElement("option");
-      option.value = i; // Set the index as the value of the option
+      option.value = i; 
       option.textContent = key;
       plansSelect.appendChild(option);
     }
